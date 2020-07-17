@@ -1,0 +1,40 @@
+//  company logo логотипы компаний
+.company {
+    &-title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
+
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+    }
+
+    &-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $iconColor;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 170px;
+        height: 90px;
+        padding: 20px 63px;
+        fill: $iconColor;
+        transition: $cubicBezier;
+        
+            &:hover, &:focus {
+                fill: $accentColor;
+                border: 1px solid $accentColor;
+            }
+
+    }
+  
+}

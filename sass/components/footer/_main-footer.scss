@@ -1,0 +1,21 @@
+@import "./footer-address";
+@import "./footer-social-list";
+@import "./footer-form";
+
+.footer{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+    height: 252px;  
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $footerBgCol;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        width: 1200px;  
+    }
+}

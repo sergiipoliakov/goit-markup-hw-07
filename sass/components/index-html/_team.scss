@@ -1,0 +1,103 @@
+// Our team Наша команда
+.team {
+    &container {
+        text-align: center;
+    }
+    
+    &-title {
+        padding-top: 94px;
+        padding-bottom: 50px;
+        letter-spacing: 0.03em;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    &-list {
+        display: flex;
+        align-items: flex-start;
+        list-style: none;
+        padding-bottom: 94px;
+    }
+    &-item {
+        background-color: $primaryWhiteColor;
+        box-shadow:  0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+        border-radius: 0px 0px 4px 4px;
+        margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }  
+    }
+    
+    &-name {
+        color: $primaryTextColor;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;  
+        letter-spacing: 0.03em;
+        font-style: normal;
+        text-align: center;
+
+    }
+    &-specialty {
+        color: $titlteTextColor;
+       font-size: 16px;
+       line-height: 1.18;
+       font-style: normal;
+       text-align: center;
+
+    }
+}
+
+.team-social {
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+      
+        width: 206px;
+        height: 44px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 24px;
+        list-style: none;
+        padding: 0;
+        
+        
+    }
+    &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primaryWhiteColor;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover, &:focus {
+                background-color: $accentColor;
+                color: $primaryWhiteColor;
+                transition: $cubicBezier;  
+            }
+
+    }
+    &-link {
+        display: flex;
+        fill: $iconColor;
+        width: 44px;
+        height: 44px;
+        padding: 12px;
+        border-radius: 50%;
+        transition: $cubicBezier;
+
+            &:hover, &:focus {
+                fill: $primaryWhiteColor;
+            }
+
+    }
+}

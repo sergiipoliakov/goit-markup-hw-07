@@ -1,0 +1,39 @@
+// Features Преимущества
+.feature {
+    &-list{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        }
+
+    &-icon {
+        width: 66px;
+        height: 70px;
+        }
+
+    &-title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;  
+        
+    }
+
+    &-text {
+        color: $titlteTextColor;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+
+    }
+}
+
+.space {
+    background-color: $secondaryBgCol;
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+  }
